@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/datafilter.css">
+  <link rel="stylesheet" href="css/page.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<style>
+.bg {
+  background-image: url("images/amuse.jpg");
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo1{
+  position:absolute;
+  right:35%;
+  top:5%;
+}
+
+</style>
+    <body>
+      
+<div class="bg" >
+  <div class="logo1">
+    <h1 class="animated zoomIn " style="animation-delay: 0.1s; font-size: 40px; color:white;" > - GO GO BUDDY -</h1> 
+  </div>
+  <!-- menu -->
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+
+<div class="modalmenu">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Amusementcenter.html">Amusement Center</a></li>
+      <li><a href="Indoor.html">Indoor</a></li>
+      <li><a href="Outdoor.html">Outdoor</a></li>
+      <li><a href="Kids.html">Kids</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Terms.html">Terms and Conditions</a></li>
+    
+    </ul>
+  </nav>
+ 
+</div>
+
+<div class="container">
+  
+    <div class="big">
+        <div class="tt text-center " style="color:white; font-size: 34px; "><h1>Amusement Center</h1></div>
+    <div class="card bo">
+        <div class="card-body">
+            <div class="container">
+                <div id="myBtnContainer">
+                  <button class="btn act" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn" onclick="filterSelection('alibaba')"> Alibaba</button>
+                  <button class="btn" onclick="filterSelection('arcadia')"> Arcadia</button>
+                  <button class="btn" onclick="filterSelection('happy')"> Happy Happy</button>
+                  <button class="btn" onclick="filterSelection('jerry')"> Jerry&Tom</button>
+                  <button class="btn" onclick="filterSelection('robot')"> Robot</button>
+                  <button class="btn" onclick="filterSelection('wonderland')"> Wonderland</button>
+                </div>
+                <br><br>
+                <hr style="background-color: white;">
+                <div class="row">
+                 <!-- Alibaba   -->
+                  <div class="column alibaba">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images/amuse/alibaba/main.jpg" alt="Alibaba " style="width:100%; height:160px;">
+                      <h5>Alibaba (Myanmar Plaza)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                        data-toggle="modal" data-target="#exampleModalScrollable1"><span>View Details</span></button>
+                      </div>
+                        <!-- Modal for Myanmar Plaza -->
+                              <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: #DC381F;">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Alibaba Amusement Center (Myanmar Plaza)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" style="color:white" aria-label="Close">
+                                          <span aria-hidden="true" >&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\1.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\4.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\3.jpg" style="height:150px; width:130px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">Address	</div>
+                                            <div class="col-sm-9">:Myanmar Plaza, 2nd floor, Kabar Aye Pagoda Rd, Bahan Township</div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-3">Phone	</div>
+                                          <div class="col-sm-9">:09-451600094, 09-454359942</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3">Hours	</div>
+                                          <div class="col-sm-9">:Sunday - Friday (9:00 AM to 9:00 PM)  <br>Saturday ( 9:00 AM to 10:00 PM)</div>
+                                      </div>
+                                      <br>
+                                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                      data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1"><span>Get Direction</span></button>
+                                     <br><br><br>
+                                     <div class="collapse" id="collapseExample1">
+                                          <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3819.610822510555!2d96.15031!3d16.7960271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ebf174a67e25%3A0x8f8ef1ace30ab7bc!2sAlibaba%20Amusement%20(Myanmar%20Plaza)!5e0!3m2!1sen!2smm!4v1582364941962!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--  End of Myanmar Plaza Modal-->
+                              </div>
+                  </div>
+                  <div class="column alibaba">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\amuse\alibaba\main.jpg" alt="Alibaba"  style="width:100%; height:160px;">
+                      <h5>Alibaba (Junction Square)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                            data-toggle="modal" data-target="#exampleModalScrollable2"><span>View Details</span></button>
+                                 <!-- Modal for Junction Square -->
+                                <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                             <div class="modal-content">
+                                 <div class="modal-header" style="background-color: #DC381F;">
+                                 <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Alibaba Amusement Center (Junction Square)</h5>
+                                    <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                      </button>
+                                       </div>
+                                          <div class="modal-body">
+                                             <div class="row">
+                                               <div class="col-sm-4"><img src="images\amuse\alibaba\2.jpg" style="height:150px; width:130px;"></div>
+                                                   <div class="col-sm-4"><img src="images\amuse\alibaba\6.jpg" style="height:150px; width:130px;"></div>
+                                              <div class="col-sm-4"><img src="images\amuse\alibaba\8.jpg" style="height:150px; width:130px;"></div>
+                                                </div>
+                                                <div class="row">
+                                                <div class="col-sm-3">Address	</div>
+                                             <div class="col-sm-9">:Junction Square, Kyun Taw Rd, Kamayut Township</div>
+                                                </div>
+                                                 <div class="row">
+                                                <div class="col-sm-3">Phone	</div>
+                                               <div class="col-sm-9">:09-696996623</div>
+                                               </div>
+                                               <div class="row">
+                                               <div class="col-sm-3">Hours	</div>
+                                              <div class="col-sm-9">:9:00 AM – 10:00 PM Daily</div>
+                                             </div>
+                                               <br>
+                                              <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                               data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><span>Get Direction</span></button>
+                                                <br><br><br>
+                                              <div class="collapse" id="collapseExample2">
+                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.178311767657!2d96.12876775049095!3d16.817507923359514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb358502ed0d%3A0xb95e770898054716!2sAlibaba%20Amusement!5e0!3m2!1sen!2smm!4v1582367000396!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                                               </div>                         
+                                              </div>
+                                         </div>
+                                          </div>
+                                         </div>
+                                   <!--  End of Junction Square Modal-->
+                              </div>
+                  </div></div>
+                  <div class="column alibaba">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\amuse\alibaba\main.jpg" alt="Alibaba"  style="width:100%; height:160px;">
+                      <h5>Alibaba (San-Yeik-Nyein)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable3"><span>View Details</span></button>
+                                <!-- Modal for San-yeik-nyein -->
+                              <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: #DC381F;">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Alibaba Amusement Center (San-Yeik-Nyein)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\9.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\3.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images\amuse\alibaba\7.jpg" style="height:150px; width:130px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">Address	</div>
+                                            <div class="col-sm-9">:Gamone Pwint -San Yeik Nyein, Insein Road, Kamaryut Township</div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-3">Phone	</div>
+                                          <div class="col-sm-9">:09-696996618</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3"> Hours	</div>
+                                          <div class="col-sm-9">:9:00 AM – 10:00 PM Daily</div>
+                                      </div>
+                                      <br>
+                                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                      data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"><span>Get Direction</span></button>
+                                     <br><br><br>
+                                     <div class="collapse" id="collapseExample3">
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30555.650173958333!2d96.13423231178614!3d16.80370598920379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195f0a60d62b3%3A0xb590c41a1e375ae9!2sAlibaba%20Amusement%20Centre%20(Ga%20Mone%20Pwint%20-%20Sna%20Yeik%20Nyein)!5e0!3m2!1sen!2smm!4v1582368023013!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>                                      
+                                         </div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--  End of San-yeik-nyein Modal-->
+                              </div></div>
+                  </div>
+                  <div class="column alibaba">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images/amuse/alibaba/main.jpg" alt="Alibaba"  style="width:100%; height:160px;">
+                      <h5>Alibaba (Pansodan)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable4"><span>View Details</span></button>
+                                <!-- Modal for Pansodan -->
+                              <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: #DC381F;">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Alibaba Amusement Center (Pansodan)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/10.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/11.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/12.jpg" style="height:150px; width:130px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">Address	</div>
+                                            <div class="col-sm-9">:Corner of Maharbandoola Rd& Pansodan Street, Kyauttada Township</div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-3">Phone	</div>
+                                          <div class="col-sm-9">:09- 445915523</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3"> Hours	</div>
+                                          <div class="col-sm-9">:10:00 AM – 11:00 PM Daily</div>
+                                      </div>
+                                      <br>
+                                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                      data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample4"><span>Get Direction</span></button>
+                                     <br><br><br>
+                                     <div class="collapse" id="collapseExample3">
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.0428014417103!2d96.15966815049056!3d16.774546024548105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec8795aba631%3A0xa0c6c16215b83081!2sAlibaba%20Amusement!5e0!3m2!1sen!2smm!4v1582367892384!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>  
+                                     </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--  End of pansodan Modal-->
+                      </div>
+                   </div>
+                  </div>
+                  <div class="column alibaba">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images/amuse/alibaba/main.jpg" alt="Alibaba"  style="width:100%; height:160px;">
+                      <h5>Alibaba (Pabedan)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable5"><span>View Details</span></button>
+                                <!-- Modal for Pabedan -->
+                              <div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: #DC381F;">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;" >Alibaba Amusement Center (Pabedan)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/13.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/14.jpg" style="height:150px; width:130px;"></div>
+                                            <div class="col-sm-4"><img src="images/amuse/alibaba/15.jpg" style="height:150px; width:130px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">Address	</div>
+                                            <div class="col-sm-9">:Shwe Dagon Pagoda Road, Theingyi Zay (C) Block, Pabedan Township</div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-sm-3">Phone	</div>
+                                          <div class="col-sm-9">:09-696996623</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3"> Hours	</div>
+                                          <div class="col-sm-9">:10:00 AM – 11:00 PM Daily</div>
+                                      </div>
+                                      <br>
+                                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                      data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5"><span>Get Direction</span></button>
+                                     <br><br><br>
+                                     <div class="collapse" id="collapseExample5">
+                                      <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p> 
+                
+                                         </div>
+                                             </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--  End of Pabedan Modal-->     
+                      </div>
+                   </div>
+                  </div>
+                <!-- Alibaba -->
+                
+                <!-- Arcadia -->
+                <div class="column arcadia">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images/amuse/arca.jpg" alt="Arcadia"  style="width:100%; height:160px;">
+                    <h5>Arcadia (Dagon Center)</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable6"><span>View Details</span></button>
+                                <!-- Modal for Arcadia Dagon center -->
+                            <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #DC381F;">
+                                      <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Arcadia Amusement Center (Dagon Center)</h5>
+                                      <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\1.jpg" style="height:150px; width:130px;"></div>
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\2.jpg" style="height:150px; width:130px;"></div>
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\3.jpg" style="height:150px; width:130px;"></div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3">Address	</div>
+                                          <div class="col-sm-9">:Myay Ni Gone, Bargayar Street, Sanchaung Township</div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-3">Phone	</div>
+                                        <div class="col-sm-9">:09-750110573</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"> Hours	</div>
+                                        <div class="col-sm-9">:9:00 AM – 9:00 PM Daily</div>
+                                    </div>
+                                    <br>
+                                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                    data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6"><span>Get Direction</span></button>
+                                   <br><br><br>
+                                   <div class="collapse" id="collapseExample6">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.449088172103!2d96.13570625049087!3d16.80406282373184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb61ba1e6717%3A0x8d99b9bdb548c98!2sArcadia%20Amusement%20Center!5e0!3m2!1sen!2smm!4v1582368749774!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>                             
+                                       </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--  End of Arcadia Amusement Center (Dagon Center) Modal-->
+                    </div>
+                 </div>
+                </div>
+                <div class="column arcadia">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images/amuse/arca.jpg" alt="Arcadia"  style="width:100%; height:160px;">
+                    <h5>Arcadia Center 2<br>(Maw Tin)</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable7"><span>View Details</span></button>
+                                <!-- Modal for Arcadia Amusement Center (Maw Tin) -->
+                            <div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #DC381F;">
+                                      <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Arcadia Amusement Center 2 (Maw Tin)</h5>
+                                      <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\4.jpg" style="height:150px; width:130px;"></div>
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\5.jpg" style="height:150px; width:130px;"></div>
+                                          <div class="col-sm-4"><img src="images\amuse\arcadia\6.jpg" style="height:150px; width:130px;"></div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-3">Address	</div>
+                                          <div class="col-sm-9">:77, 5th street,</div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-3">Phone	</div>
+                                        <div class="col-sm-9">:09-696996647</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"> Hours	</div>
+                                        <div class="col-sm-9">:9:00 AM – 9:00 PM Daily</div>
+                                    </div>
+                                    <br>
+                                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                    data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7"><span>Get Direction</span></button>
+                                   <br><br><br>
+                                   <div class="collapse" id="collapseExample7">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.994769720796!2d96.13774175049053!3d16.77693582448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eba6de8cf3a7%3A0x35a065fa55e110b5!2sArcadia%20Amusement%20Center%202%20(Maw%20Tin%20Branch)!5e0!3m2!1sen!2smm!4v1582369159635!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                                   </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--  End of Arcadia Amusement Center (Maw Tin) Modal-->    
+                    </div>
+                 </div>
+                </div>
+                <!-- Arcadia -->
+                
+                <!-- Happy Happy -->
+                <div class="column happy">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images/amuse/happy/main.jpg" alt="Happy Happy"  style="width:100%; height:160px;">
+                    <h5>Happy Happy<br>(Kamayut)</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View details"
+                    data-toggle="modal" data-target="#exampleModalScrollable8"><span>View details</span></button>
+                                      <!-- Modal for Happy Happy Amusement Center (Kamayut) -->
+                            <div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #DC381F;">
+                                      <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Happy Happy Amusement Center (Kamayut)</h5>
+                                      <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                    </div>
+                                      <div class="row">
+                                          <div class="col-sm-3">Address	</div>
+                                          <div class="col-sm-9">:Ward 7, Kyun Taw Rd, Kamayut Township</div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-3">Phone	</div>
+                                        <div class="col-sm-9">:01-707869</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"> Hours	</div>
+                                        <div class="col-sm-9">:10:00 AM – 10:45 PM Daily</div>
+                                    </div>
+                                    <br>
+                                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                    data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8"><span>Get Direction</span></button>
+                                   <br><br><br>
+                                   <div class="collapse" id="collapseExample8">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.1656812387837!2d96.12727445049094!3d16.818134823342238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ebb75fbf722f%3A0x80448d7bab8e31ed!2sHAPPY%20HAPPY!5e0!3m2!1sen!2smm!4v1582369348758!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--  End of Happy Happy Amusement Center (Kamayut) Modal-->
+                    </div>
+                 </div>
+                </div>
+                <div class="column happy">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images/amuse/happy/main1.jpg" alt="Happy Happy"  style="width:100%; height:160px;">
+                    <h5>Happy Happy<br>(Merchant-Rd)</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View details"
+                    data-toggle="modal" data-target="#exampleModalScrollable9"><span>View details</span></button>
+                                   <!-- Modal for Happy Happy Amusement Center (Merchant-Rd) -->
+                            <div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #DC381F;">
+                                      <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Happy Happy Amusement Center (Merchant-Rd)</h5>
+                                      <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                        <div class="col-sm-4"><img src="" style="height:150px; width:130px;" alt="Photos are coming soon..."></div>
+                                    </div>
+                                      <div class="row">
+                                          <div class="col-sm-3">Address	</div>
+                                          <div class="col-sm-9">:628/636 Merchant Road, (10th Floor, Royal River View Condo) Between 29th and, 30th St, Yangon</div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-3">Phone	</div>
+                                        <div class="col-sm-9">:01-707869</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"> Hours	</div>
+                                        <div class="col-sm-9">:10:00 AM – 10:45 PM Daily</div>
+                                    </div>
+                                    <br>
+                                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                    data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9"><span>Get Direction</span></button>
+                                   <br><br><br>
+                                   <div class="collapse" id="collapseExample9">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.0928600707325!2d96.15449055049052!3d16.772055024616918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec7e3e2f8de9%3A0x68af655427ef8429!2sHappy%20Happy%20Amusement!5e0!3m2!1sen!2smm!4v1582369239088!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--  End of Happy Happy Amusement Center (Merchant-Rd) Modal-->   
+                    </div>
+                 </div>
+                </div>
+                <!-- Happy Happy -->
+                
+                <!-- Jerry&Tom -->
+                <div class="column jerry">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\amuse\j&t\4.png" alt="Jerry&Tom"  style="width:100%; height:160px;">
+                    <h5>Jerry & Tom </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable10"><span>View Details</span></button>
+                  <!-- Modal for Jerry & Tom Amusement Center  -->
+                <div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: #DC381F;">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Jerry & Tom Amusement Center </h5>
+                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-4"><img src="images\amuse\j&t\1.png" style="height:150px; width:130px;"></div>
+                            <div class="col-sm-4"><img src="images\amuse\j&t\5.jpg" style="height:150px; width:130px;"></div>
+                            <div class="col-sm-4"><img src="images\amuse\j&t\3.png" style="height:150px; width:130px;"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Address	</div>
+                            <div class="col-sm-9">:No. 86 Yadanar Rd, Thingangyun Township</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3">Phone	</div>
+                          <div class="col-sm-9">:09-783451414</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3"> Hours	</div>
+                          <div class="col-sm-9">:10:00 AM – 11:00 PM Daily</div>
+                      </div>
+                      <br>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                      data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10"><span>Get Direction</span></button>
+                     <br><br><br>
+                     <div class="collapse" id="collapseExample10">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.8449416059902!2d96.17457995049114!3d16.83404672290122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193188023f147%3A0x7c8292d60a29ffb9!2sJerry%20%26%20Tom%20Amusement%20Centre!5e0!3m2!1sen!2smm!4v1582369420163!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                   </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  End of Jerry & Tom Amusement Center Modal-->
+                    </div>
+                 </div>
+                </div>
+                <!-- Jerry&Tom -->
+                
+                 <!-- Robot -->
+                 <div class="column robot">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\amuse\robot\main.jpg" alt="Robot"  style="width:100%; height:160px;">
+                    <h5>Robot </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable11"><span>View Details</span></button>  
+                  <!-- Modal for Robot Amusement Center-->
+                <div class="modal fade" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #DC381F;">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Robot Amusement Center </h5>
+                    <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4"><img src="images\amuse\robot\1.jpg" style="height:150px; width:130px;"></div>
+                        <div class="col-sm-4"><img src="images\amuse\robot\2.jpg" style="height:150px; width:130px;"></div>
+                        <div class="col-sm-4"><img src="images\amuse\robot\3.jpg" style="height:150px; width:130px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">Address	</div>
+                        <div class="col-sm-9">:Golden Gate Tower, Ground floor, Upper Pazundaung Rd, Pazundaung Township</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">Phone	</div>
+                      <div class="col-sm-9">:</div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-3"> Hours	</div>
+                      <div class="col-sm-9">:Opening Hours: 9:00 AM – 8:00 PM Daily</div>
+                  </div>
+                  <br>
+                  <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                  data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11"><span>Get Direction</span></button>
+                 <br><br><br>
+                 <div class="collapse" id="collapseExample11">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.8684582854567!2d96.17173435049065!3d16.78321882430847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecf2b5847807%3A0xb2b39d510c79a7e4!2sRobot!5e0!3m2!1sen!2smm!4v1582369489248!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                        </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                <!--  End of Robot Amusement Center Modal-->   
+                    </div>
+                 </div>
+                </div>
+                <!-- Robot -->
+                
+                 <!-- Wonderland -->
+                 <div class="column wonderland">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\amuse\wonderland\main.jpg" alt="Wonderland"  style="width:100%; height:160px;">
+                    <h5>Wonderland </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable12"><span>View Details</span></button>
+                  <!-- Modal for Wonderland Amusement Center-->
+                <div class="modal fade" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #DC381F;">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Wonderland Amusement Center </h5>
+                    <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4"><img src="images\amuse\wonderland\1.jpg" style="height:150px; width:130px;"></div>
+                        <div class="col-sm-4"><img src="images\amuse\wonderland\2.jpg" style="height:150px; width:130px;"></div>
+                        <div class="col-sm-4"><img src="images\amuse\wonderland\3.jpg" style="height:150px; width:130px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">Address	</div>
+                        <div class="col-sm-9">:No.09, Pearl Condo, Ground Floor, Kabar Aye Pagoda Road, Bahan Township</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">Phone	</div>
+                      <div class="col-sm-9">:09-764315316</div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-3"> Hours	</div>
+                      <div class="col-sm-9">:Opening Hours: 10:00 AM – 10:30 PM Daily</div>
+                  </div>
+                  <br>
+                  <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                  data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample12"><span>Get Direction</span></button>
+                 <br><br><br>
+                 <div class="collapse" id="collapseExample12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.1735972833208!2d96.15432215049093!3d16.81774192335311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecab0c8a2355%3A0xa9246255e02f0ea4!2sWonderland!5e0!3m2!1sen!2smm!4v1582369621188!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                       </div>
+                      </div>
+                </div>
+                </div>
+                </div>
+                <!--  End of Wonderland Amusement Center Modal-->
+                    </div>
+                 </div>
+                </div>
+                <!-- Wonderland -->
+                <!-- END GRID -->
+                </div>
+                </div> 
+    
+         </div>
+        </div>
+        </div>
+        
+        </div>
+        <footer>       
+          <p class="text-center">Copyright© 2020. All right reserved - Developed by Team DC.</p>
+      </footer>
+      </div>
+
+</body>
+       <!-- script for menu -->
+       <script>
+        $(document).ready(function(){
+  $(".menu-toggle").click(function(){
+     $(".menu-toggle").toggleClass("active");
+    $(".modalmenu").toggleClass("modalmenu-active");
+    $("nav").toggleClass("nav-active");
+  });
+  });
+    </script>
+       <script>
+        filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+  }
+  
+  // Show filtered elements
+  function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+  }
+  
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("act");
+    current[0].className = current[0].className.replace(" act", "");
+    this.className += " act";
+  });
+  }
+    </script>
+</html>

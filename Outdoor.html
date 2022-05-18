@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/datafilter.css">
+  <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<style>
+.bg2 {
+  background-image: url("images/outdoor.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo1{
+  position:absolute;
+  right:35%;
+  top:5%;
+}
+</style>
+
+    <body>
+
+<div class="bg2">
+  <div class="logo1">
+    <h1 class="animated zoomIn " style="animation-delay: 0.1s; font-size: 40px; color:white;" > - GO GO BUDDY -</h1> 
+  </div>
+  <!-- menu -->
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+
+<div class="modalmenu">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Amusementcenter.html">Amusement Center</a></li>
+      <li><a href="Indoor.html">Indoor</a></li>
+      <li><a href="Outdoor.html">Outdoor</a></li>
+      <li><a href="Kids.html">Kids</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Terms.html">Terms and Conditions</a></li>
+    </ul>
+  </nav>
+ 
+</div>
+
+<div class="container">
+    <div class="big">
+        <div class="tt text-center" style="color:white; font-size: 34px;"><h1>Outdoor Playground</h1></div>
+    <div class="card bo">
+        <div class="card-body">
+            <div class="container">
+                
+                <div id="myBtnContainer1">
+                  <button class="btn act" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn" onclick="filterSelection('ant')"> Ant Paintball Club</button>
+                  <button class="btn" onclick="filterSelection('Happy')"> HappyWorld</button>
+                  <button class="btn" onclick="filterSelection('mya')"> Mya Lay Yone Skate Park</button>
+                  <button class="btn" onclick="filterSelection('water')"> Yangon Waterboom</button>
+                </div>
+                <br><br>
+                <hr style="background-color: white;">
+                <div class="row">
+                 <!-- Ant Paintball Club   -->
+                  <div class="column ant">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\outdoor\ant\main.jpg" alt="Ant Paintball Club" style="width:100%; height:160px;">
+                      <h5>Ant Paintball Club <br>Yangon</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable1"><span>View Details</span></button>
+                <!-- Modal for Ant Paintball Club Yangon -->
+                <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: #DC381F;">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Ant Paintball Club Yangon</h5>
+                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-4"><img src="images\outdoor\ant\1.jpg" style="height:150px; width:130px;"></div>
+                            <div class="col-sm-4"><img src="images\outdoor\ant\2.jpg" style="height:150px; width:130px;"></div>
+                            <div class="col-sm-4"><img src="images\outdoor\ant\4.jpg" style="height:150px; width:130px;"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Address	</div>
+                            <div class="col-sm-9">:Yamone Nar Street, Shukhinthar Rd, Dawbon Township</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3">Phone	</div>
+                          <div class="col-sm-9">:09 966 988768, 09-67788893</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3">Hours	</div>
+                          <div class="col-sm-9">:Closed on Mondays <br> Tuesday- Sunday (10:00 AM – 5:00 PM)</div>
+                      </div>
+                      <br>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                      data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1"><span>Get Direction</span></button>
+                     <br><br><br>
+                     <div class="collapse" id="collapseExample1">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.4947536244813!2d96.18789875055111!3d21.992346159488914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6ee36c044f0b%3A0xde23b9a74b9a8570!2sAnt%20Paintball%20Club!5e0!3m2!1sen!2smm!4v1582417760487!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe> 
+                    </div>   
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                <!-- Ant Paintball Club Yangon -->     
+                       </div>
+                      </div>
+                  </div>
+                 <!-- Ant Paintball Club   -->
+                
+                  <!-- Happy World   -->
+                  <div class="column Happy">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\outdoor\happyworld\main.jpg" alt="Happy World " style="width:100%; height:160px;">
+                      <h5>Happy World<br>(People’s park)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable2"><span>View Details</span></button>
+                                          <!-- Modal for Happy World (People’s park) -->
+                    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Happy World (People’s park)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-2"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\happyworld\2.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\happyworld\4.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-2"></div>
+                                </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:People’s park</div>
+                              </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 8:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.124672221817!2d96.14090444590994!3d16.798436524541437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb43643d3097%3A0x10832d57125afa4f!2zSGFwcHkgV29ybGQg4YCB4YCx4YCQ4YC64YCZ4YCu4YCA4YCF4YCs4YC44YCA4YC94YCE4YC64YC4!5e0!3m2!1sen!2smm!4v1582417978842!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                              </div>  
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Happy World (People’s park) -->    
+                              </div>
+                  </div></div>
+                
+                  <div class="column Happy">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\outdoor\happyworld\main.jpg" alt="Happy World " style="width:100%; height:160px;">
+                      <h5>Happy World <br>(Dagon)</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable3"><span>View Details</span></button>   
+                                         <!-- Modal for Happy World (Dagon) -->
+                      <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header" style="background-color: #DC381F;">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Happy World (Dagon)</h5>
+                                <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-4"><img src="images\outdoor\happyworld\1.jpg" style="height:150px; width:130px;"></div>
+                                    <div class="col-sm-4"><img src="images\outdoor\happyworld\3.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-2"></div>
+                                  </div>
+                                <div class="row">
+                                    <div class="col-sm-3">Address	</div>
+                                    <div class="col-sm-9">:Shwe Dagon Pagoda (South Entrance), U Oaktama Park, Dagon Township</div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">Phone	</div>
+                                  <div class="col-sm-9">:09 796 288422, 01-243434</div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Hours	</div>
+                                  <div class="col-sm-9">:7:00 AM – 9:00 PM Daily</div>
+                              </div>
+                              <br>
+                              <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                              data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"><span>Get Direction</span></button>
+                             <br><br><br>
+                             <div class="collapse" id="collapseExample3">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.123849125745!2d96.14088298760548!3d16.798456974075595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb6055bf0e53%3A0x4008985bf92b6c78!2sHappy%20World%20Amusement%20Park!5e0!3m2!1sen!2smm!4v1582418013133!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                             </div>      
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Happy World (Dagon) -->     
+                              </div>
+                  </div></div>
+                   <!-- Happy World   -->
+                
+                    <!-- Mya lay Yone   -->
+                  <div class="column mya">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\outdoor\skate\1.jpg" alt="Mya lay Yone" style="width:100%; height:160px;">
+                      <h5>Mya lay Yone Skate Park</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable4"><span>View Details</span></button>
+                                          <!-- Modal for Mya Lay Yone Skate Park -->
+                    <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Mya Lay Yone Skate Park</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\outdoor\skate\2.png" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\skate\3.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\skate\4.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Yamone Nar Street, Shukhinthar Rd, Dawbon Township</div>
+                              </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.056148490116!2d96.1204277148685!3d16.823570388418773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194cd0e3aa42d%3A0x2f851f213247909!2sMya%20Lay%20Yone%20Skatepark!5e0!3m2!1sen!2smm!4v1582418103619!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                             </div>    
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Mya Lay Yone Skate Park -->     
+                              </div></div>
+                  </div>
+                  <!-- Mya lay Yone   -->
+                
+                  <!-- Yangon Waterboom   -->
+                  <div class="column water">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\outdoor\waterboom\main.jpg" alt="Yangon Waterboom" style="width:100%; height:160px;">
+                      <h5>Yangon Waterboom </h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable6"><span>View Details</span></button>
+                       <!-- Modal for Yangon Waterboom -->
+                    <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Yangon Waterboom</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\outdoor\waterboom\1.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\waterboom\2.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\outdoor\waterboom\3.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Yamone Nar Street, Shukhinthar Rd, Dawbon Township</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">Phone	</div>
+                                <div class="col-sm-9">:01-9190612</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:Closed on Mondays <br>Tuesday- Sunday (9:00 AM – 6:00 PM)</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.066244299054!2d96.19805156398239!3d16.773379514040347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed00c9e28a09%3A0x5aa9871d473f1bb8!2sYangon%20Water%20Boom!5e0!3m2!1sen!2smm!4v1582418261745!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                               </div>
+                                 </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Yangon Waterboom-->          
+                      </div>
+                   </div>
+                  </div>
+                <!-- Yangon Waterboom   -->
+                
+                
+                <!-- END GRID -->
+                </div>
+              </div>
+    
+            </div>
+        </div>
+        </div>
+        
+        </div>
+        <footer>       
+          <p class="text-center">Copyright© 2020. All right reserved - Developed by Team DC.</p>
+      </footer>
+      </div>
+
+</body>
+       <!-- script for menu -->
+       <script>
+        $(document).ready(function(){
+  $(".menu-toggle").click(function(){
+     $(".menu-toggle").toggleClass("active");
+    $(".modalmenu").toggleClass("modalmenu-active");
+    $("nav").toggleClass("nav-active");
+  });
+});
+    </script>
+                            <script>
+          filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+  
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer1");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("act");
+      current[0].className = current[0].className.replace(" act", "");
+      this.className += " act";
+    });
+  }
+      </script>
+</html>

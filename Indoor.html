@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/datafilter.css">
+  <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<style>
+  
+  .big{
+    padding-top:48%;
+}
+.bg1{
+  background-image: url("images/indoor.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo1{
+  position:absolute;
+  right:35%;
+  top:5%;
+}
+</style>
+    <body>
+
+<div class="bg1" >
+  <div class="logo1">
+    <h1 class="animated zoomIn " style="animation-delay: 0.1s; font-size: 40px; color:white;" > - GO GO BUDDY -</h1> 
+  </div>s
+  <!-- menu -->
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+
+<div class="modalmenu">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Amusementcenter.html">Amusement Center</a></li>
+      <li><a href="Indoor.html">Indoor</a></li>
+      <li><a href="Outdoor.html">Outdoor</a></li>
+      <li><a href="Kids.html">Kids</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Terms.html">Terms and Conditions</a></li>
+    </ul>
+  </nav>
+ 
+</div>
+
+<div class="container">
+    <div class="big">
+        <div class="tt text-center" style="color:white; font-size: 34px;"><h1>Indoor Playground</h1></div>
+    <div class="card bo">
+        <div class="card-body">
+            <div class="container">
+                <div id="myBtnContainer2">
+                  <button class="btn act" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn" onclick="filterSelection('asia')"> Asia Point Boiling</button>
+                  <button class="btn" onclick="filterSelection('gogo')"> Gogo Racer</button>
+                  <button class="btn" onclick="filterSelection('ice')"> Ice Arena</button>
+                  <button class="btn" onclick="filterSelection('indoor')"> Indoor sky diving</button>
+                  <button class="btn" onclick="filterSelection('laser')"> Laser Arena</button>
+                  <button class="btn" onclick="filterSelection('momo')"> Momoplay</button>
+                  <button class="btn" onclick="filterSelection('royal')"> Royal Sportainment Complex</button>
+                  <button class="btn" onclick="filterSelection('urban')"> Urban Cue</button>
+                  <button class="btn" onclick="filterSelection('vr')"> VR Zone</button>
+                  <button class="btn" onclick="filterSelection('xcape')">Xcape Squad</button>
+                </div>
+                
+                <hr style="background-color: white;">
+                <div class="row">
+                 <!-- Asia Point Boiling   -->
+                  <div class="column asia">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\indoor\asia\main.jpg" alt="Asia Point Boiling" style="width:100%; height:160px;">
+                      <h5>Asia Point Boiling</h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable1"><span>View Details</span></button>
+                          <!-- Modal for Asia Point Bowling Center -->
+                          <div class="modal fade " id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content modal-wrapper">
+                                  <div class="modal-header" style="background-color: #DC381F;">
+                                    <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Asia Point Bowling Center</h5>
+                                    <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-sm-4"><img src="images\indoor\asia\1.jpg" style="height:150px; width:130px;"></div>
+                                        <div class="col-sm-4"><img src="images\indoor\asia\2.jpg" style="height:150px; width:130px;"></div>
+                                        <div class="col-sm-4"><img src="images\indoor\asia\3.jpg" style="height:150px; width:130px;"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">Address	</div>
+                                        <div class="col-sm-9">:View Point Amusement Part, Shukhinthar Rd, Thaketa Township</div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-3">Phone	</div>
+                                      <div class="col-sm-9">:09 798 559233</div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-sm-3">Hours	</div>
+                                      <div class="col-sm-9">:10:00 AM – 11:00 PM Daily</div>
+                                  </div>
+                                  <br>
+                                  <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                                  data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1"><span>Get Direction</span></button>
+                                 <br><br><br>
+                                 <div class="collapse" id="collapseExample1">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.057910222258!2d96.1993752504906!3d16.773794224568984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed072443449d%3A0xd15ed5c6e8cb87f!2sAsia%20Point%20Bowling%20Centre!5e0!3m2!1sen!2smm!4v1582371042748!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                                 </div>
+                                       </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <!--  End of Asia Point Bowling Center-->        
+                       </div>
+                      </div>
+                  </div>
+                 <!-- Asia Point Boiling   -->
+                
+                  <!-- Gogo racer   -->
+                  <div class="column gogo">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\indoor\gogo\main.jpg" alt="Gogo racer " style="width:100%; height:160px;">
+                      <h5>Gogo Racer </h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable2"><span>View Details</span></button>
+                <!-- Modal for Gogo Racer -->
+                    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Gogo Racer</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\gogo\1.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\gogo\2.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\gogo\3.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Junction Square, Level 5- Car parking , Kyun Taw Rd, Kamayut Township</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">Phone	</div>
+                                <div class="col-sm-9">:09-968113593</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:11:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample2">
+                            <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p>
+                          </div>
+                </div>  
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Gogo Racer-->        
+                       </div>
+                      </div>
+                  </div>
+                 <!-- Gogo racer    -->
+                  
+                  <!-- Ice Arena   -->
+                  <div class="column ice">
+                    <div class="wrapper">
+                    <div class="content" >
+                      <img src="images\indoor\ice\main.jpg" alt="Ice Arena " style="width:100%; height:160px;">
+                      <h5>Ice Arena </h5>
+                      <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                      data-toggle="modal" data-target="#exampleModalScrollable3"><span>View Details</span></button>
+                <!-- Ice Arena -->
+                    <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Ice Arena</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\ice\1.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\ice\2.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\ice\3.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Myanmar Plaza, 2nd floor, Kabar Aye Pagoda Rd, Bahan Township</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">Phone	</div>
+                                <div class="col-sm-9">:09 775 587797</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.970781940766!2d96.15284765049107!3d16.827805523074243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1935660a967f5%3A0x7e7c6cf5b1af7923!2sIce%20Arena!5e0!3m2!1sen!2smm!4v1582371198145!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                           </div>
+                </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!--  Ice Arena-->        
+                       </div>
+                      </div>
+                  </div>
+                 <!-- Ice Arena    -->
+                
+                 <!-- Indoor Skydiving  -->
+                 <div class="column indoor">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\in\main.jpg" alt="Indoor Skydiving " style="width:100%; height:160px;">
+                    <h5>Indoor Skydiving </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable4"><span>View Details</span></button>
+                <!-- Modal for Indoor Skydiving Yangon -->
+                  <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Indoor Skydiving Yangon</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\in\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\in\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\in\3.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:9 Mile, Taw Win Rd, Mayangone Township</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 766 699222, 09-34006200</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:9:00 AM – 9:00 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample4">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.910144861562!2d96.12852475049162!3d16.88033892161622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19442b04efaa9%3A0xf00a4a02cc24236a!2sIndoor%20Skydiving%20Yangon!5e0!3m2!1sen!2smm!4v1582371236365!5m2!1sen!2smm" width="440" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                          </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Indoor Skydiving Yangon-->      
+                     </div>
+                    </div>
+                </div>
+                <!-- Indoor Skydiving   -->
+                
+                <!-- Laser Arena  -->
+                <div class="column laser">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\laser\main.jpg" alt="Laser Arena" style="width:100%; height:160px;">
+                    <h5>Laser Arena </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable5"><span>View Details</span></button>
+                <!-- Modal for Laser Arena -->
+                  <div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Laser Arena</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\laser\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\laser\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\laser\3.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:Myanmar Plaza, 2nd floor, Kabar Aye Pagoda Rd, Bahan Township</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 775 587797</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample5">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.971693135988!2d96.15290835049106!3d16.82776032307547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193565e42a937%3A0xe529361adda5f1aa!2sPlayground%20(Laser%20Arena)!5e0!3m2!1sen!2smm!4v1582371279217!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                          </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Laser Arena-->       
+                     </div>
+                    </div>
+                </div>
+                <!-- Laser Arena   -->
+                
+                <!-- Momoplay  -->
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay(City Mall) </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable6"><span>View Details</span></button>
+                <!-- Modal for MomoPlay (City Mall) -->
+                  <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">MomoPlay (City Mall)</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\momo\9.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\momo\3.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\momo\5.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:Corner of Pyay Road & Min Ye Kyaw Swar Road, Lanmadaw Township</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09-9775587727</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample6">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30559.005900435444!2d96.12657903955079!3d16.782856800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb7af0d5e773%3A0x3cebf34104cffca6!2sMomoPlay%20%40%20St%20John!5e0!3m2!1sen!2smm!4v1582417165080!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>   
+                             </div> 
+                          </div>           
+                        </div>
+                      </div>
+                    </div>
+                    <!--  MomoPlay (City Mall)-->
+                
+                     </div>
+                    </div>
+                </div>
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay<br>(Dagon Center) </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable7"><span>View Details</span></button>
+                <!-- Modal for MomoPlay (Dagon Center) -->
+                    <div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">MomoPlay (Dagon Center)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\momo\6.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\4.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\16.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:No.262-264, Pyay Road, Myaynigone, Sanchaung Township, Yangon</div>
+                              </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample7">
+                            <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p> 
+                           </div>
+                           </div>                      
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MomoPlay (Dagon Center)-->      
+                     </div>
+                    </div>
+                </div>
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay<br>(Junction City)</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable8"><span>View Details</span></button>
+                <!-- Modal for MomoPlay (Junction City) -->
+                    <div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">MomoPlay (Junction City)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\momo\13.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\14.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\15.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Corner of Bogyoke Aung San Road, Shwedagaon, Shwedagon Pagoda Rd, Yangon</div>
+                              </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample8">
+                            <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p>                               </div>
+                    </div>                      
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MomoPlay (Junction City)-->      
+                     </div>
+                    </div>
+                </div>
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay<br>(Junction Square) </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable9"><span>View Details</span></button>
+                  <!-- Modal for MomoPlay (Junction Square) -->
+                    <div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">MomoPlay (Junction Square)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-sm-2"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\7.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\8.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-2"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Ward 7, Beteen Pyay Road and Kyun Taw Rod, Karmaryut Township </div>
+                              </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample9">
+                            <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p>                                       </div>
+                      </div>                      
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MomoPlay (Junction Square)-->      
+                     </div>
+                    </div>
+                </div>
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay<br>(Myanmar Plaza) </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable10"><span>View Details</span></button>
+                    <!-- Modal for MomoPlay (Myanmar Plaza) -->
+                    <div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;" >MomoPlay (Myanmar Plaza)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\momo\1.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\2.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\4.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:Level 3, Myanmar Plaza, Next to Black Canyon Coffee Kabar Aye Pagoda Road, Bahan Township </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">Phone	</div>
+                                <div class="col-sm-9">:09-9775587717</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 10:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample10">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.971052539276!2d96.15282581744384!3d16.827792099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193565e4b8f81%3A0x7f774519ad1d0b76!2sMomo%20Play!5e0!3m2!1sen!2smm!4v1582378234743!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                           </div>
+                        </div>                      
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MomoPlay (Myanmar Plaza)-->      
+                     </div>
+                    </div>
+                </div>
+                <div class="column momo">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\momo\main.png" alt="Momoplay" style="width:100%; height:160px;">
+                    <h5>Momoplay<br>(Waizantayar Condo) </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable11"><span>View Details</span></button>
+                      <!-- Modal for MomoPlay (Waizayantar Condo) -->
+                    <div class="modal fade" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #DC381F;">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">MomoPlay (Waizayantar Condo)</h5>
+                              <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-sm-4"><img src="images\indoor\momo\10.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\11.jpg" style="height:150px; width:130px;"></div>
+                                  <div class="col-sm-4"><img src="images\indoor\momo\12.jpg" style="height:150px; width:130px;"></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-3">Address	</div>
+                                  <div class="col-sm-9">:First Floor, Waizayantar Condo,Next to KFC, Waizayantar Road, Thingangyn Township </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">Phone	</div>
+                                <div class="col-sm-9">:09-9775587737</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Hours	</div>
+                                <div class="col-sm-9">:10:00 AM – 9:00 PM Daily</div>
+                            </div>
+                            <br>
+                            <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                            data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11"><span>Get Direction</span></button>
+                           <br><br><br>
+                           <div class="collapse" id="collapseExample11">
+                            <p ><b style="color:red">Sorry!!!</b> <b>This location is not currently available in google map.</b></p>                                         </div>
+                        </div>                      
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MomoPlay (Waizayantar Condo)-->       
+                     </div>
+                    </div>
+                </div>
+                <!-- Momoplay   -->
+                
+                <!-- Royal Sportainment Complex   -->
+                <div class="column royal">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\royal\main.jpg" alt="Royal Sportainment Complex " style="width:100%; height:160px;">
+                    <h5>Royal Sportainment Complex</h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable12"><span>View Details</span></button>
+                <!-- Modal for Royal Sportainment Complex -->
+                  <div class="modal fade" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Royal Sportainment Complex</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\royal\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\royal\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\royal\3.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:9 Mile, Taw Win Rd, Mayangone Township</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 966 988768, 09-67788893</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:10:00 AM – 10:00 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample12"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample12">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.92175315421!2d96.12779915049161!3d16.87976482163207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1957d31e23765%3A0x4074482c6733a862!2sRoyal%20Sportainment%20Complex!5e0!3m2!1sen!2smm!4v1582416093334!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                         </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Royal Sportainment Complex -->       
+                     </div>
+                    </div>
+                </div>
+                <!-- Royal Sportainment Complex    -->
+                
+                <!-- Urban Cue   -->
+                <div class="column urban">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\urban\main.jpg" alt="Urban Cue" style="width:100%; height:160px;">
+                    <h5>Urban Cue </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable13"><span>View Details</span></button>
+                <!-- Modal for Urban Cue -->
+                  <div class="modal fade" id="exampleModalScrollable13" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Urban Cue</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\urban\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\urban\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\urban\3.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:Urban Asia Center, Corner of 48th Street & Maha Bandula Road, No. (10-H) </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 768663160</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:11:00 AM – 4:00 AM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample13"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample13">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.0421442611523!2d96.16694795049054!3d16.774578724547105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec8a187ea589%3A0x92fda114b715cc1a!2sUrban%20Cue!5e0!3m2!1sen!2smm!4v1582416145699!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe> 
+                           </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Urban Cue -->      
+                     </div>
+                    </div>
+                </div>
+                <!--Urban Cue    -->
+                
+                <!-- VR Zone  -->
+                <div class="column vr">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\vr\main.jpg" alt="VR Zone" style="width:100%; height:160px;">
+                    <h5>VR Zone </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable14"><span>View Details</span></button>
+                <!-- Modal for Urban Cue -->
+                  <div class="modal fade" id="exampleModalScrollable14" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">VR Zone</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\vr\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\vr\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\vr\3.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:7-8, KabarAye Pagoda Road, Yankin Township </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 767157805</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:11:00 AM – 11:00 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample14"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample14">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.84570389784!2d96.15331905049112!3d16.834008922902264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1933cc27400e7%3A0xd42972028ef3f514!2sVR%20Zone!5e0!3m2!1sen!2smm!4v1582416184423!5m2!1sen!2smm" width="450" height="300" frameborder="0"  allowfullscreen=""></iframe>
+                            </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Urban Cue -->      
+                     </div>
+                    </div>
+                </div>
+                <!--VR Zone    -->
+                
+                <!-- Xcape Squad  -->
+                <div class="column xcape">
+                  <div class="wrapper">
+                  <div class="content" >
+                    <img src="images\indoor\xcape\main.jpg" alt="Xcape Squad" style="width:100%; height:160px;">
+                    <h5>Xcape Squad </h5>
+                    <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="View Details"
+                    data-toggle="modal" data-target="#exampleModalScrollable15"><span>View Details</span></button>
+                <!-- Modal for Royal Sportainment Complex -->
+                  <div class="modal fade" id="exampleModalScrollable15" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: #DC381F;">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle" style="color:white;">Xcape Squad</h5>
+                            <button type="button" class="close" data-dismiss="modal" style="color:white;"aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-4"><img src="images\indoor\xcape\1.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\xcape\2.jpg" style="height:150px; width:130px;"></div>
+                                <div class="col-sm-4"><img src="images\indoor\xcape\4.jpg" style="height:150px; width:130px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">Address	</div>
+                                <div class="col-sm-9">:Gamone Pwint -San Yeik Nyein, Insein Road, Kamaryut Township</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-3">Phone	</div>
+                              <div class="col-sm-9">:09 766 999505</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-3">Hours	</div>
+                              <div class="col-sm-9">:11:00 AM – 7:30 PM Daily</div>
+                          </div>
+                          <br>
+                          <button class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Get Direction"
+                          data-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample15"><span>Get Direction</span></button>
+                         <br><br><br>
+                         <div class="collapse" id="collapseExample15">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.868057669752!2d96.12746955049113!3d16.832900422932987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194f1d349d8fb%3A0x4cfcc467570460e2!2sXcape%20Squad!5e0!3m2!1sen!2smm!4v1582416232475!5m2!1sen!2smm" width="450" height="300" frameborder="0" allowfullscreen=""></iframe>
+                           </div>
+                </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Xcape Squad -->      
+                     </div>
+                    </div>
+                </div>
+                <!--Xcape Squad  -->
+                <!-- END GRID -->
+                </div>
+                </div>  
+    
+         </div>
+        </div>
+        </div>
+        
+        </div>
+        <footer>       
+          <p class="text-center">Copyright© 2020. All right reserved - Developed by Team DC.</p>
+      </footer>
+      </div>
+
+</body>
+       <!-- script for menu -->
+       <script>
+        $(document).ready(function(){
+  $(".menu-toggle").click(function(){
+     $(".menu-toggle").toggleClass("active");
+    $(".modalmenu").toggleClass("modalmenu-active");
+    $("nav").toggleClass("nav-active");
+  });
+});
+    </script>
+      <script>
+          filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+  
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer2");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("act");
+      current[0].className = current[0].className.replace(" act", "");
+      this.className += " act";
+    });
+  }
+      </script>
+</html>
